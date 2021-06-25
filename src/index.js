@@ -19,7 +19,7 @@ function onChangeBgr(e) {
   refs.startBtn.disabled = true;
 
   timerId = setInterval(() => {
-    document.body.style.background = colors[randomIntegerFromInterval(0, 5)];
+    document.body.style.background = colors[randomIntegerFromInterval(0, colors.length - 1)];
   }, 1000);
 }
 
